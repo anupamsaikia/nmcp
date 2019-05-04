@@ -1,7 +1,7 @@
 # Numerical Methods and Computer Programming (NMCP)
 
 This repository shows implementation of different Numerical Methods using C program.
-All these methods & programs are in the subject of NMCP (MA401) in B.Tech 4th sememter, Central Institute of Technology, Kokrajhar
+All these methods & programs are in the subject of NMCP (MA401) in B.Tech 4th semester, Central Institute of Technology, Kokrajhar
 
 ## Transcendental and Polynomial Equations
 Methods of iteration for finding solution of transcendental and equations: 
