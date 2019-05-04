@@ -3,7 +3,7 @@
 
 float g(float x)
 {
-  return ((exp(-x) +1)/2);
+  return ((exp(-x) + 1) / 2);
 }
 
 int main()
@@ -19,7 +19,7 @@ int main()
     x1 = x2;
     x2 = g(x1);
   }
-  
+
   printf("The required solution is %f", x2);
   printf("\n\n");
   return 0;
