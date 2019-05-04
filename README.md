@@ -1,2 +1,2 @@
-# nmcp
+# NMCP
 C programs
