@@ -13,7 +13,7 @@ int main()
   scanf("%f%f", &x0, &xn);
   printf("\nEnter the number of intervals : ");
   scanf("%d", &n);
-  
+
   h = (xn - x0) / n;
 
   for (i = 1; i <= (n - 1); i++)
