@@ -15,14 +15,14 @@ int main()
   scanf("%f", &xn);
   printf("Enter the number of intervals n : ");
   scanf("%d", &n);
-  
-  h = (xn - x0)/n;
+
+  h = (xn - x0) / n;
 
   while (x0 < xn)
   {
     x1 = x0 + h;
     y11 = y0 + h * f(x0, y0);
-    y12 = y0 + (h/2)*(f(x0,y0) + f(x1,y11));
+    y12 = y0 + (h / 2) * (f(x0, y0) + f(x1, y11));
     printf("\nWhen x = %g\tThen y(%g) = %f", x1, x1, y12);
     x0 = x1;
     y0 = y12;

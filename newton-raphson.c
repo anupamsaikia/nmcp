@@ -24,7 +24,7 @@ int main()
     x1 = x2;
     x2 = x1 - (f(x1) / fd(x1));
   }
-  
+
   printf("The required solution is %f", x2);
   printf("\n\n");
   return 0;
