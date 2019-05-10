@@ -3,44 +3,56 @@
 
 float f(float x, float y)
 {
-  return (x + y);
+  return x + y;
+}
+
+float predict(float x, float y, float h)
+{
+  return y + h * f(x, y);
+}
+
+float correct(float x, float y, float x1, float y1, float h, float e)
+{
+  float y1c = y1;
+  int i = 0;
+
+  do
+  {
+    y1 = y1c;
+    y1c = y + 0.5 * h * (f(x, y) + f(x1, y1));
+    printf("\n\tModified value %d of y = %f", ++i, y1c);
+  } while (fabs(y1c - y1) > e);
+
+  return y1c;
 }
 
 int main()
 {
-  int i = 0, n;
-  float x0, y0, x1, y11, y12, y13, h, xn, e;
+  int n;
+  float x, y, xn, h, e;
 
-  printf("Enter the initial value of x0 and y0 :\n");
-  scanf("%f%f", &x0, &y0);
-  printf("Enter the value of xn for which ans is required : ");
+  printf("Enter the initial value of x and y :\n");
+  scanf("%f%f", &x, &y);
+  printf("Enter the value of xn for which answer is required : ");
   scanf("%f", &xn);
   printf("Enter the number of intervals n : ");
   scanf("%d", &n);
   printf("Enter the error value e : ");
   scanf("%f", &e);
 
-  h = (xn - x0) / n;
+  h = (xn - x) / n;
 
-  while (x0 <= xn)
+  while (x < xn)
   {
-    printf("\nWhen x(%d) = %f\tThen y(%f) = %f", i++, x0, x0, y0);
-    y11 = y0 + h * f(x0, y0);
-    x1 = x0 + h;
-    y12 = y0 + (h / 2) * (f(x0, y0) + f(x1, y11));
-
-    while (fabs(y11 - y12) > e)
-    {
-      y13 = y0 + (h / 2) * (f(x0, y0) + f(x1, y12));
-      printf("\n\tModified value of y = %f", y13);
-      y11 = y12;
-      y12 = y13;
-    }
-
-    x0 = x1;
-    y0 = y11;
+    float x1 = x + h;
+    float y1p = predict(x, y, h);
+    printf("\nWhen x = %g\tThen predicted value y(%g) = %f", x1, x1, y1p);
+    float y1c = correct(x, y, x1, y1p, h, e);
+    x = x1;
+    y = y1c;
   }
 
+  printf("\nFinal value of y at x = %g is %f", x, y);
   printf("\n\n");
   return 0;
 }
