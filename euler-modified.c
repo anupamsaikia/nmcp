@@ -52,7 +52,7 @@ int main()
     y = y1c;
   }
 
-  printf("\nFinal value of y at x = %g is %f", x, y);
+  printf("\n\nFinal value of y at x = %g is %f", x, y);
   printf("\n\n");
   return 0;
 }
