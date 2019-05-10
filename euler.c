@@ -8,20 +8,19 @@ float f(float x, float y)
 
 int main()
 {
-  int i = 0;
   float x, y, xn, h;
   printf("Enter the initial value of x and y :\n");
   scanf("%f%f", &x, &y);
-  printf("Enter the step length :");
-  scanf("%f", &h);
-  printf("Enter the value of x for which y is required :");
+  printf("Enter the value of x for which y is required : ");
   scanf("%f", &xn);
+  printf("Enter the step length : ");
+  scanf("%f", &h);
 
-  while (x <= xn)
+  while (x < xn)
   {
     y += h * f(x, y);
     x += h;
-    printf("\nWhen x%d = %f\tThen y(%f) = %f", ++i, x, x, y);
+    printf("\nWhen x = %g\tThen y(%g) = %f", x, x, y);
   }
 
   printf("\n\n");
