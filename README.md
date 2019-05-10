@@ -12,6 +12,7 @@ Methods of iteration for finding solution of transcendental and equations:
 1. [Successive Approximation Method](successive-approximation.c)
 
 ## Curve Fitting and Interpolation 
+1. [Linear curve fitting](curve-fitting-linear.c)
 1. [Lagrange’s Interpolation Formula](lagrange-interpolation.c)
 
 ## Numerical Differentiation & Integration
