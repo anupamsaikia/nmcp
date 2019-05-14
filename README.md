@@ -1,12 +1,16 @@
+<div style="text-align:center;">
+<h3>Sponsored by</h3>
+
+<a href="https://www.dikhow.com/">
+  <img src="https://i0.wp.com/www.dikhow.com/wp-content/uploads/2019/03/dikhow-circle-small.png?fit=60%2C60&ssl=1" alt="Dikhow.com">
+</a>
+</div>
+
 # Numerical Methods and Computer Programming (NMCP)
 
 This repository shows implementation of different Numerical Methods using C program.
 All these methods & programs are in the subject of NMCP (MA401) in B.Tech 4th semester, Central Institute of Technology, Kokrajhar
 
-<center>Sponsored by 
-
-![Dikhow.com](https://i0.wp.com/www.dikhow.com/wp-content/uploads/2019/03/dikhow-circle-small.png?fit=60%2C60&ssl=1 "Dikhow.com")
-</center>
 
 ## Transcendental and Polynomial Equations
 Methods of iteration for finding solution of transcendental and equations: 
