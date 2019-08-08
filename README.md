@@ -1,11 +1,3 @@
-<div style="text-align:center;">
-<h3>Sponsored by</h3>
-
-<a href="https://www.dikhow.com/">
-  <img src="https://i0.wp.com/www.dikhow.com/wp-content/uploads/2019/03/dikhow-circle-small.png?fit=60%2C60&ssl=1" alt="Dikhow.com">
-</a>
-</div>
-
 # Numerical Methods and Computer Programming (NMCP)
 
 This repository shows implementation of different Numerical Methods using C program.
